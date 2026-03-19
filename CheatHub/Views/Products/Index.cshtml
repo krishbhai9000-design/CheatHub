@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+<style>
+    body {
+        background: #0b0f14;
+        color: white;
+        font-family: Arial;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 40px;
+        color: #00eaff;
+    }
+
+    .search-box {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .search-box input {
+        width: 300px;
+        padding: 10px;
+        background: #111;
+        border: 1px solid #00eaff;
+        color: white;
+    }
+
+    .filters {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .filters button {
+        margin: 5px;
+        padding: 10px 15px;
+        background: transparent;
+        border: 1px solid #00eaff;
+        color: #00eaff;
+        cursor: pointer;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: 220px;
+        background: #111;
+        border: 1px solid #00eaff;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px #00eaff;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .btn {
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        background: #00eaff;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+</style>
+
+<h1 class="title">ALL PRODUCTS</h1>
+
+    
+<div class="search-box">
+    <input type="text" placeholder="Search products..." />
+</div>
+
+<div class="filters">
+    <a href="/Products" class="active">ALL</a>
+    <a href="/Products/Free">FREE</a>
+    <a href="/Products/Paid">PAID</a>
+    <a href="/Products/Premium">PREMIUM</a>
+</div>
+
+
+<div class="products">
+
+    <div class="card">
+       <img src="/Image/bypass.jpg" />
+        <h3>UID BYPASS</h3>
+        <a href="#" class="btn" style="background:linear-gradient(90deg,#00eaff,#00bcd4);">
+    DOWNLOAD
+</a>
+    </div>
+
+    <div class="card">
+        <img src="/Image/internal.jpg" />
+        <h3>INTERNAL</h3>
+        <a href="#" class="btn" style="background:linear-gradient(90deg,#00eaff,#00bcd4);">
+    DOWNLOAD
+</a>
+    </div>
+
+     <div class="card">
+        <img src="/Image/external.jpg" />
+        <h3>EXTERNAL</h3>
+        <a href="#" class="btn" style="background:linear-gradient(90deg,#00eaff,#00bcd4);">
+    DOWNLOAD
+</a>
+    </div>
+
+    <div class="card">
+        <img src="/Image/basic.jpg" />
+        <h3>BASIC</h3>
+        <a href="#" class="btn">BUY</a>
+    </div>
+
+</div>
